@@ -10,7 +10,6 @@ import reactor.core.publisher.Mono;
 
 public interface PostRepository extends ReactiveMongoRepository<PostModel, UUID> {
 
-	Mono<PostModel> findById(String id);
 
 
 
