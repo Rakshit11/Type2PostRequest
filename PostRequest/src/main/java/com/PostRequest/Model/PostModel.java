@@ -13,14 +13,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PostModel {
 
-	@Id
+		@Id
 	private String id;
-	private String stateCode;
+	private TransferType stateCode;
 	private String vin;
 	private TransferType Enum;
 	public PostModel(String stateCode, String vin, TransferType Enum) {
 		this.Enum=Enum;
-		this.stateCode=stateCode;
+		this.stateCode=TransferType.FLEET_SALVAGE;
 		this.vin=vin;
 	}
 }
